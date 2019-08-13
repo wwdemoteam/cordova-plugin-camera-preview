@@ -56,7 +56,7 @@ var disableAllowBackup = (function () {
 			
 			root._children.forEach(function(item) {
 				if(item.tag === 'uses-feature') {
-					item.set('android:required', 'true');
+					item.set('tools:node', 'merge');
 				}
 				
 				if(item.tag === 'uses-permission') {
