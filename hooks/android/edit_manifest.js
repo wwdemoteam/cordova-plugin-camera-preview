@@ -56,6 +56,7 @@ var disableAllowBackup = (function () {
 			
 			root._children.forEach(function(item) {
 				if(item.tag === 'uses-feature') {
+					console.log(item);
 					item.set('tools:node', 'merge');
 				}
 				
