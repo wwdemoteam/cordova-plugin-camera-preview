@@ -56,7 +56,7 @@ var disableAllowBackup = (function () {
 			
 			root._children.forEach(function(item) {
 				if(item.tag === 'uses-feature') {
-					item.set('tools:node', 'merge-only-attributes');
+					item.set('tools:node', 'remove');
 				}
 				
 				if(item.tag === 'uses-permission') {
